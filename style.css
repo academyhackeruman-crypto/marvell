@@ -1,0 +1,211 @@
+body {
+    background: #210303;
+    font-size: #ffffff;
+    }
+
+h1 {
+    font-size: 50px;
+    color:#ffffff;
+    text-align: center;
+    margin: 0%;
+}
+
+h2 {
+    font-size: 30px;
+    color:#ffffff;
+    text-align: center;
+    margin: 0%;
+    
+}
+.stor-h2{
+    font-size: 30px;
+    color:#000000;
+    text-align: center;
+    margin: 0%;
+}
+
+.name-hero {
+    font-size: 20px;
+    color:#ffffff;
+    text-align: center;
+    margin: 0%;
+}
+.hero-table {
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+footer {
+    background-color: #6206ed;
+    margin-top: 20px;
+    font-size: 14;
+    color: #d0e2f4;
+    text-align: center;
+}
+.img-hero:hover {
+    transform: scale(1.1);
+}
+.img-hero {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: rgb(220, 69, 69);
+}
+
+/* сітка */
+.hero-grid {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* картки */
+.hero-card {
+    text-align: center;
+}
+/*позиції*/
+.top {
+    grid-column: 2;
+    grid-row: 1;
+}
+.left {
+    grid-column: 1;
+    grid-row: 2;
+}
+.right {
+    grid-column: 3;
+    grid-row: 2;
+}
+.bottom {
+    grid-column: 2;
+    grid-row: 3;
+}
+.stor-body {
+    background: #ffffff; 
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+header {
+    background-color: rgb(114, 33, 9);
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.img-box {
+    flex: 1;
+    height: 250px;
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* header */
+.header-flex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* кнопка назад */
+.back-btn {
+    position: absolute;
+    left: 20px;
+    background-color: #ffffff;
+    color: #722109;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* ефект при наведенні */
+.back-btn:hover {
+    background-color: #ffd000;
+    color: black;
+}
+
+
+
+/* Кнопка нагору */
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #722109;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.top-btn:hover {
+    background: #ffd000;
+    color: black;
+}
+
+/* Кнопка теми */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #722109;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.theme-btn:hover {
+    background: #ffd000;
+    color: black;
+}
+
+/* Темна тема */
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme .content {
+    color: white;
+}
+
+.dark-theme .stor-h2 {
+    color: white;
+}
+
+.dark-theme footer {
+    background-color: #222;
+}
+
+.dark-theme header {
+    background-color: #000;
+}
